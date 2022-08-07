@@ -49,9 +49,9 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Posting() {
     return (
-        <Box className="mt-7">
-            <Box sx={{ width: '100%' }}>
-            <div className="xl:flex hidden ">
+        <Box className="mt-7 w-[100%]">
+            <Box className="flex justify-center" sx={{ width: '100%' }}>
+            <div className="xl:flex hidden w-[80%]">
                     <Masonry columns={3} spacing={2} className="post">
                         {PostData && PostData.map((list, index) => {
                             return <Item key={index} sx={{ height: "auto", p: 0 }}>
@@ -126,10 +126,6 @@ function Posting() {
                     </Masonry>
                 </div>
 
-            </Box>
-            <Box className="flex md:flex-row flex-col items-center justify-end mt-3 ">
-                <Typography className="pr-7 md:pb-0 pb-3"><span className="text-[gray]">1 - 12 of 456</span></Typography>
-                <Pagination />
             </Box>
         </Box>
     )
