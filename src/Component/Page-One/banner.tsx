@@ -8,7 +8,7 @@ import BannerImg from '../../assest/bannerImg.svg'
 export default function BannerCard() {
     return (
         <Box className="w-[100%] lg:h-[600px] h-[500px] relative flex justify-center items-center md:mt-0 mt-5 relative bg-gradient sm:rounded-b-[200px]">
-            <Box className="lg:w-[52%] sm:w-[55%] w-[90%] flex justify-between items-center z-50">
+            <Box className="sm:w-[55%] w-[90%] flex justify-between items-center z-50">
                 <Box className="ml-5">
                     <Typography>
                         <span className="lg:text-[56px] md:text-[32px] text-[20px] leading-tight text-[black] md:font-normal font-bold">This could be <br /> <span className="text-[#2066C7]">your</span> meme.</span>
