@@ -4,7 +4,8 @@ import Box from '@mui/material/Box';
 import Footer from './Component/footer'
 import FirstPage from './Page-One';
 import { Route, Routes } from 'react-router-dom'
-import SecondPage from './Second-Page';
+import SecondPage from './Page-Second';
+import ThirdPage from './Page-Third';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<FirstPage />} />
                 <Route path="/secondpage" element={<SecondPage />} />
+                <Route path="/thirdpage" element={<ThirdPage />} />
             </Routes>
 
             <Footer />

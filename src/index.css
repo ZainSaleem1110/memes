@@ -42,3 +42,13 @@ body{
   .bg-gradient{
     background: radial-gradient(84.81% 84.81% at 50% 50%, #E8F3FF 0%, rgba(232, 243, 255, 0) 100%);
   }
+
+  .replyBox{
+    height: 0px;
+    transition: 2s !important;
+}
+
+.animation {
+    height: 65%;
+    transition: 2s !important;
+}
