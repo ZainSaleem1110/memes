@@ -41,5 +41,4 @@ body{
   }
   .bg-gradient{
     background: radial-gradient(84.81% 84.81% at 50% 50%, #E8F3FF 0%, rgba(232, 243, 255, 0) 100%);
-    border-radius: 0px 0px 200px 200px !important;
   }

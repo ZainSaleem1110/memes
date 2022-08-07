@@ -7,18 +7,18 @@ import BannerImg from '../../assest/bannerImg.svg'
 
 export default function BannerCard() {
     return (
-        <Box className="w-[100%] lg:h-[600px] h-[500px] relative flex justify-center items-center md:mt-0 mt-5 relative bg-gradient">
-            <Box className="sm:w-[52%] flex justify-between items-center z-50">
-                <Box>
+        <Box className="w-[100%] lg:h-[600px] h-[500px] relative flex justify-center items-center md:mt-0 mt-5 relative bg-gradient sm:rounded-b-[200px]">
+            <Box className="lg:w-[52%] sm:w-[55%] w-[90%] flex justify-between items-center z-50">
+                <Box className="ml-5">
                     <Typography>
-                        <span className="lg:text-[56px] md:text-[32px] text-[14px] leading-tight text-[black] md:font-normal font-bold">This could be <br /> <span className="text-[#2066C7]">your</span> meme.</span>
+                        <span className="lg:text-[56px] md:text-[32px] text-[20px] leading-tight text-[black] md:font-normal font-bold">This could be <br /> <span className="text-[#2066C7]">your</span> meme.</span>
                     </Typography>
                     <Typography sx={{ mt: 1 }}>
                         one does simply make cool memes.
                     </Typography>
                 </Box>
-                <Box className="relative flex justify-center">
-                    <img src={BannerImg} className="w-[340px] h-[260px]" alt="" />
+                <Box className="relative flex justify-center md:h-[260px] h-[150px]">
+                    <img src={BannerImg} className="w-[340px] md:h-[260px] h-[150px] object-cover" alt="" />
                     <CardActions className="absolute bottom-[-25px] ">
                         <Button className="btn colorBtn">Create a Meme</Button>
                     </CardActions>
