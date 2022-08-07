@@ -2,17 +2,17 @@ import React from 'react'
 import Navbar from './Component/navbar'
 import Box from '@mui/material/Box';
 import Footer from './Component/footer'
-import LandingPage from './landingPage';
+import FirstPage from './Page-One';
 import { Route, Routes } from 'react-router-dom'
-import RecentMems from './Component/recentMems';
+import SecondPage from './Second-Page';
 
 function App() {
     return (
         <Box className="mb-10 w-[100%]">
             <Navbar />
             <Routes>
-                <Route path="/" element={<LandingPage />} />
-                <Route path="/recentMemes" element={<RecentMems />} />
+                <Route path="/" element={<FirstPage />} />
+                <Route path="/secondpage" element={<SecondPage />} />
             </Routes>
 
             <Footer />

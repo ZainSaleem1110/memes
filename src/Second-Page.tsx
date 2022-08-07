@@ -1,9 +1,9 @@
 import React from 'react'
-import BannerCard from './Component/Page-One/banner'
+import BannerCard from './Component/secondPageBanner'
 import Box from '@mui/material/Box';
 import Post from './Component/post'
 
-function LandingPage() {
+function SecondPage() {
     return (
         <div>
             <BannerCard />
@@ -14,4 +14,4 @@ function LandingPage() {
     )
 }
 
-export default LandingPage
+export default SecondPage

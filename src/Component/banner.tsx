@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import BannerImg from '../../assest/bannerImg.svg'
+import BannerImg from '../assest/bannerImg.svg'
 
 export default function BannerCard() {
     return (
