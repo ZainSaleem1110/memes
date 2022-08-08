@@ -2,13 +2,14 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import SmileFace from '../assest/smileFace.svg'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Card from '@mui/material/Card';
 import Post01 from "../assest/memes1.svg"
 import Post02 from "../assest/post1.svg"
 import Post03 from "../assest/memes2.svg"
 import Stack from '@mui/material/Stack';
+import SmileFace from '../assest/smileFace.svg'
+import ShareIcon from '@mui/icons-material/Share';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import { styled } from '@mui/material/styles';
@@ -62,13 +63,14 @@ export default function SecondPageBannerCard() {
                                 <Card>
                                     <img src={list.Img} className="w-full" alt="" />
                                     <Box className="h-[72px] flex items-center justify-between px-4">
+                                    <img src={SmileFace} className="w-[32px] h-[32px]" alt="" />
                                         <Stack spacing={2} direction="row">
-                                            <Button startIcon={<ThumbUpIcon />}>1.5k</Button>
-                                            <Button startIcon={<VisibilityIcon />}>
+                                            <Button className="button" startIcon={<ThumbUpIcon />}>1.5k</Button>
+                                            <Button className="button" startIcon={<ShareIcon />}>
                                                 1.5k
                                             </Button>
                                         </Stack>
-                                        <Button className="btn colorBtn">Remix</Button>
+                                        <Button className="btn colorBtn">Create</Button>
                                     </Box>
                                 </Card>
                             </Item>
@@ -82,13 +84,14 @@ export default function SecondPageBannerCard() {
                                 <Card>
                                     <img src={list.Img} className="w-full" alt="" />
                                     <Box className="h-[72px] flex items-center justify-between px-4">
+                                    <img src={SmileFace} className="w-[32px] h-[32px]" alt="" />
                                         <Stack spacing={2} direction="row">
-                                            <Button startIcon={<ThumbUpIcon />}>1.5k</Button>
-                                            <Button startIcon={<VisibilityIcon />}>
+                                            <Button className="button" startIcon={<ThumbUpIcon />}>1.5k</Button>
+                                            <Button className="button" startIcon={<ShareIcon />}>
                                                 1.5k
                                             </Button>
                                         </Stack>
-                                        <Button className="btn colorBtn">Remix</Button>
+                                        <Button className="btn colorBtn">Create</Button>
                                     </Box>
                                 </Card>
                             </Item>
@@ -102,13 +105,14 @@ export default function SecondPageBannerCard() {
                                 <Card className="sm:h-auto h-[560px]">
                                     <img src={list.Img} className="w-full h-[488px] object-cover" alt="" />
                                     <Box className="h-[72px] flex items-center justify-between px-4">
+                                    <img src={SmileFace} className="w-[32px] h-[32px]" alt="" />
                                         <Stack spacing={2} direction="row">
-                                            <Button startIcon={<ThumbUpIcon />}>1.5k</Button>
-                                            <Button startIcon={<VisibilityIcon />}>
+                                            <Button className="button" startIcon={<ThumbUpIcon />}>1.5k</Button>
+                                            <Button className="button" startIcon={<ShareIcon />}>
                                                 1.5k
                                             </Button>
                                         </Stack>
-                                        <Button className="btn colorBtn">Remix</Button>
+                                        <Button className="btn colorBtn">Create</Button>
                                     </Box>
                                 </Card>
                             </Item>

@@ -4,9 +4,10 @@ import ProfilePic from '../assest/profile.svg';
 import PostImg from '../assest/yourPost.svg';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import VisibilityIcon from '@mui/icons-material/Visibility';
+import ShareIcon from '@mui/icons-material/Share';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import Post from './post'
+import SmileFace from '../assest/smileFace.svg'
 import SmilePic from '../assest/smile.svg'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -49,18 +50,18 @@ function DetailPage() {
             <Box className="w-[100%] h-auto z-50 py-4 relative flex justify-center items-center">
                 <Box className="lg:px-10 px-5 xl:w-[70%] lg:w-[80%] w-[90%] mt-10">
                     <span className="text-[28px] font-medium">me in my profile pic vs. me in the zoom meeting</span>
-                    <Box className="flex items-center">
+                    <Box className="flex sm:flex-row flex-col items-center lg:w-[60%]">
                         <Box className="flex gap-x-3 mt-5">
                             <img src={ProfilePic} className="w-[24px] h-[24px]" alt="" />
                             <span className="text-[16px] font-medium">@dandyolly</span>
                         </Box>
-                        <Box className="md:w-[650px] sm:w-[550px] ml-5">
+                        <Box className="w-[100%] ml-10">
                             <Box className="flex justify-between items-center mt-5">
                                 <Stack spacing={2} direction="row">
-                                    <Button className="like" startIcon={<ThumbUpIcon />}>
+                                    <Button className="like button" startIcon={<ThumbUpIcon />}>
                                         1.5k
                                     </Button>
-                                    <Button className="dislike" startIcon={<VisibilityIcon />}>
+                                    <Button className="dislike button" startIcon={<ShareIcon />}>
                                         1.5k
                                     </Button>
                                 </Stack>
@@ -170,13 +171,14 @@ function DetailPage() {
                                     <Card>
                                         <img src={list.Img} className="w-full" alt="" />
                                         <Box className="h-[72px] flex items-center justify-between px-4">
+                                        <img src={SmileFace} className="w-[32px] h-[32px]" alt="" />
                                             <Stack spacing={2} direction="row">
-                                                <Button startIcon={<ThumbUpIcon />}>1.5k</Button>
-                                                <Button startIcon={<VisibilityIcon />}>
+                                                <Button className="button" startIcon={<ThumbUpIcon />}>1.5k</Button>
+                                                <Button className="button" startIcon={<ShareIcon />}>
                                                     1.5k
                                                 </Button>
                                             </Stack>
-                                            <Button className="btn colorBtn">Remix</Button>
+                                            <Button className="btn colorBtn">Create</Button>
                                         </Box>
                                     </Card>
                                 </Item>
@@ -190,13 +192,14 @@ function DetailPage() {
                                     <Card>
                                         <img src={list.Img} className="w-full" alt="" />
                                         <Box className="h-[72px] flex items-center justify-between px-4">
+                                        <img src={SmileFace} className="w-[32px] h-[32px]" alt="" />
                                             <Stack spacing={2} direction="row">
-                                                <Button startIcon={<ThumbUpIcon />}>1.5k</Button>
-                                                <Button startIcon={<VisibilityIcon />}>
+                                                <Button className="button" startIcon={<ThumbUpIcon />}>1.5k</Button>
+                                                <Button className="button" startIcon={<ShareIcon />}>
                                                     1.5k
                                                 </Button>
                                             </Stack>
-                                            <Button className="btn colorBtn">Remix</Button>
+                                            <Button className="btn colorBtn">Create</Button>
                                         </Box>
                                     </Card>
                                 </Item>
@@ -210,13 +213,14 @@ function DetailPage() {
                                     <Card className="sm:h-auto h-[560px]">
                                         <img src={list.Img} className="w-full h-[488px] object-cover" alt="" />
                                         <Box className="h-[72px] flex items-center justify-between px-4">
+                                        <img src={SmileFace} className="w-[32px] h-[32px]" alt="" />
                                             <Stack spacing={2} direction="row">
-                                                <Button startIcon={<ThumbUpIcon />}>1.5k</Button>
-                                                <Button startIcon={<VisibilityIcon />}>
+                                                <Button className="button" startIcon={<ThumbUpIcon />}>1.5k</Button>
+                                                <Button className="button" startIcon={<ShareIcon />}>
                                                     1.5k
                                                 </Button>
                                             </Stack>
-                                            <Button className="btn colorBtn">Remix</Button>
+                                            <Button className="btn colorBtn">Create</Button>
                                         </Box>
                                     </Card>
                                 </Item>

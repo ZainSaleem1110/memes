@@ -17,12 +17,13 @@ import Post12 from "../assest/post12.svg"
 import LinkIcon from '@mui/icons-material/Link';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import VisibilityIcon from '@mui/icons-material/Visibility';
+import ShareIcon from '@mui/icons-material/Share';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Masonry from '@mui/lab/Masonry';
 import Pagination from './pagination'
+import SmileFace from '../assest/smileFace.svg'
 
 const PostData = [
     { Img: Post01, name: "Me in my profile pic vs. me in the zoom meeting" },
@@ -58,13 +59,14 @@ function Posting() {
                                 <Card>
                                     <img src={list.Img} className="h-[400px] w-full object-cover" alt="" />
                                     <Box className="h-[72px] flex items-center justify-between px-4">
-                                        <Stack spacing={2} direction="row">
-                                            <Button startIcon={<ThumbUpIcon />}>1.5k</Button>
-                                            <Button startIcon={<VisibilityIcon />}>
+                                    <img src={SmileFace} className="w-[32px] h-[32px]" alt="" />
+                                        <Stack spacing={1} direction="row">
+                                            <Button className="button" startIcon={<ThumbUpIcon />}>1.5k</Button>
+                                            <Button className="button" startIcon={<ShareIcon />}>
                                                 1.5k
                                             </Button>
                                         </Stack>
-                                        <Button className="btn colorBtn">Remix</Button>
+                                        <Button className="btn colorBtn">Create</Button>
                                     </Box>
                                 </Card>
                             </Item>
@@ -83,15 +85,16 @@ function Posting() {
                                         </Box>
                                         <LinkIcon />
                                     </Box>
-                                    <img src={list.Img} className="w-[100%]" alt="" />
+                                     <img src={list.Img} className="h-[400px] w-full object-cover" alt="" />
                                     <Box className="h-[72px] flex items-center justify-between px-4">
-                                        <Stack spacing={2} direction="row">
-                                            <Button startIcon={<ThumbUpIcon />}>1.5k</Button>
-                                            <Button startIcon={<VisibilityIcon />}>
+                                    <img src={SmileFace} className="w-[32px] h-[32px]" alt="" />
+                                        <Stack spacing={1} direction="row">
+                                            <Button className="button" startIcon={<ThumbUpIcon />}>1.5k</Button>
+                                            <Button className="button" startIcon={<ShareIcon />}>
                                                 1.5k
                                             </Button>
                                         </Stack>
-                                        <Button className="btn colorBtn">Remix</Button>
+                                        <Button className="btn colorBtn">Create</Button>
                                     </Box>
                                 </Card>
                             </Item>
@@ -110,15 +113,16 @@ function Posting() {
                                         </Box>
                                         <LinkIcon />
                                     </Box>
-                                    <img src={list.Img} className="w-[100%]" alt="" />
+                                     <img src={list.Img} className="h-[400px] w-full object-cover" alt="" />
                                     <Box className="h-[72px] flex items-center justify-between px-4">
-                                        <Stack spacing={2} direction="row">
-                                            <Button startIcon={<ThumbUpIcon />}>1.5k</Button>
-                                            <Button startIcon={<VisibilityIcon />}>
+                                    <img src={SmileFace} className="w-[32px] h-[32px]" alt="" />
+                                        <Stack spacing={1} direction="row">
+                                            <Button className="button" startIcon={<ThumbUpIcon />}>1.5k</Button>
+                                            <Button className="button" startIcon={<ShareIcon />}>
                                                 1.5k
                                             </Button>
                                         </Stack>
-                                        <Button className="btn colorBtn">Remix</Button>
+                                        <Button className="btn colorBtn">Create</Button>
                                     </Box>
                                 </Card>
                             </Item>

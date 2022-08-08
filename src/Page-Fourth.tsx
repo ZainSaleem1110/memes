@@ -2,6 +2,7 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import Posting from './Component/PostingFourthPage'
 import SmileFace from './assest/smileFace.svg'
+import SortBy from './Component/SortBy'
 
 function PageFourth() {
     return (
@@ -14,6 +15,9 @@ function PageFourth() {
                         <p className="text-[20px] text-[#626262]">24 memes</p>
                     </Box>
                 </Box>
+            </Box>
+            <Box className="flex justify-end md:w-[89%] w-[99%]">
+                <SortBy/>
             </Box>
             <Box className="gradient flex flex-col items-center mb-10">
                 <Posting />

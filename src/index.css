@@ -52,3 +52,8 @@ body{
     height: 65%;
     transition: 2s !important;
 }
+
+.button{
+    border: 1px solid gray !important;
+    color: gray !important;
+}
